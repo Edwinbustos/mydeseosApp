@@ -1,0 +1,26 @@
+<ion-header >
+  <ion-navbar color="dark">
+    <ion-title>Pendientes</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngFor="let listas of pendiente.mi_lista">
+
+    <ion-card-header>
+      {{ listas.nombre_lista }}
+    </ion-card-header>
+
+    <ion-card-content>
+      <!-- Add card content here! -->
+      contenidos
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-fab right bottom>
+    <button ion-fab color="primary" (click)="irAgregar()"><ion-icon ios="ios-add" md="md-add"></ion-icon></button>
+
+  </ion-fab>
+
+</ion-content>
